@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle && headerNav) {
         menuToggle.addEventListener('click', () => {
             headerNav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
         });
         
         headerNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 headerNav.classList.remove('active');
+                menuToggle.classList.remove('active');
             });
         });
     }

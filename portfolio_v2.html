@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полная галерея — El Capitone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_v2.css">
+    <style>
+        .page-header { padding: 160px 0 80px; text-align: center; background: #000; color: #fff; }
+        .page-header h1 { font-size: 4rem; margin-bottom: 20px; }
+        .page-header p { opacity: 0.8; max-width: 600px; margin: 0 auto; font-size: 1.1rem; }
+        .gallery-full { padding: 100px 0; }
+        .gallery-full .gallery__masonry { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 1200px) { .gallery-full .gallery__masonry { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 992px) { .gallery-full .gallery__masonry { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 576px) { .gallery-full .gallery__masonry { grid-template-columns: 1fr; } }
+        
+        /* Custom caption styling for v2 */
+        .gal-item {
+            position: relative;
+        }
+        .gal-item__caption {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: #fff;
+            padding: 30px 20px 15px;
+            font-size: 1.1rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.4s;
+            pointer-events: none;
+        }
+        .gal-item:hover .gal-item__caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index_v2.html" class="header__logo" style="text-decoration:none; color:#fff;">El Capitone</a>
+            <nav class="header__nav">
+                <a href="index_v2.html#collections">Коллекции</a>
+                <a href="portfolio_v2.html">Галерея</a>
+                <a href="index_v2.html#materials">Ткани</a>
+            </nav>
+            <a href="index_v2.html#materials" class="btn btn-outline header__btn">Связаться</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Полная коллекция</h1>
+            <p>Погрузитесь в эстетику форм и фактур. Все представленные модели доступны к заказу.</p>
+        </div>
+    </div>
+
+    <section class="gallery-full">
+        <div class="container">
+            <div class="gallery__masonry">
+                
+                <div class="gal-item">
+                    <img src="images/catalog/page_2-img_1.png" alt="Офисное кресло Lakshm" loading="lazy">
+                    <div class="gal-item__caption">Офисное кресло Lakshm</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_3-img_1.png" alt="Офисное кресло Lakshm" loading="lazy">
+                    <div class="gal-item__caption">Офисное кресло Lakshm</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_4-img_1.png" alt="Круглый пуф Capitone" loading="lazy">
+                    <div class="gal-item__caption">Круглый пуф Capitone</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_5-img_1.png" alt="Круглый пуф Capitone" loading="lazy">
+                    <div class="gal-item__caption">Круглый пуф Capitone</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_6-img_1.png" alt="П уф Capitone" loading="lazy">
+                    <div class="gal-item__caption">П уф Capitone</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_7-img_1.png" alt="П уф Capitone" loading="lazy">
+                    <div class="gal-item__caption">П уф Capitone</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_8-img_1.png" alt="Мягкий шезлонг" loading="lazy">
+                    <div class="gal-item__caption">Мягкий шезлонг</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_9-img_1.png" alt="Мягкий шезлонг" loading="lazy">
+                    <div class="gal-item__caption">Мягкий шезлонг</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_10-img_1.png" alt="Кресло Rose" loading="lazy">
+                    <div class="gal-item__caption">Кресло Rose</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_11-img_1.png" alt="Кресло Rose" loading="lazy">
+                    <div class="gal-item__caption">Кресло Rose</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_12-img_1.png" alt="Кресло M i ni o·" loading="lazy">
+                    <div class="gal-item__caption">Кресло M i ni o·</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_13-img_1.png" alt="Кресло M i ni o· 1" loading="lazy">
+                    <div class="gal-item__caption">Кресло M i ni o· 1</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_14-img_1.png" alt="Кресло Monro" loading="lazy">
+                    <div class="gal-item__caption">Кресло Monro</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_15-img_1.png" alt="Кресло Monro" loading="lazy">
+                    <div class="gal-item__caption">Кресло Monro</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_16-img_1.png" alt="Кресло Ael i ·" loading="lazy">
+                    <div class="gal-item__caption">Кресло Ael i ·</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_17-img_1.png" alt="Кресло Ael i ·" loading="lazy">
+                    <div class="gal-item__caption">Кресло Ael i ·</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_18-img_1.png" alt="Кресло Lord" loading="lazy">
+                    <div class="gal-item__caption">Кресло Lord</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_19-img_1.png" alt="Кресло Lord" loading="lazy">
+                    <div class="gal-item__caption">Кресло Lord</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_20-img_1.png" alt="СкамейкаКамелия" loading="lazy">
+                    <div class="gal-item__caption">СкамейкаКамелия</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_21-img_1.png" alt="СкамейкаКамелия" loading="lazy">
+                    <div class="gal-item__caption">СкамейкаКамелия</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_22-img_1.png" alt="Банкетка с крышкой" loading="lazy">
+                    <div class="gal-item__caption">Банкетка с крышкой</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_23-img_1.png" alt="Диваны" loading="lazy">
+                    <div class="gal-item__caption">Диваны</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_24-img_1.png" alt="Диван Chest erf i el Q cl assi E" loading="lazy">
+                    <div class="gal-item__caption">Диван Chest erf i el Q cl assi E</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_25-img_1.png" alt="Диван Chest erf i el Q cl assi E" loading="lazy">
+                    <div class="gal-item__caption">Диван Chest erf i el Q cl assi E</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_26-img_1.png" alt="Диван Baxt eê" loading="lazy">
+                    <div class="gal-item__caption">Диван Baxt eê</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_27-img_1.png" alt="Диван Baxt eê" loading="lazy">
+                    <div class="gal-item__caption">Диван Baxt eê</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_28-img_1.png" alt="Диван Bruce" loading="lazy">
+                    <div class="gal-item__caption">Диван Bruce</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_29-img_1.png" alt="Диван Bruce" loading="lazy">
+                    <div class="gal-item__caption">Диван Bruce</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_30-img_1.png" alt="Диван Brocc( sof (" loading="lazy">
+                    <div class="gal-item__caption">Диван Brocc( sof (</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_31-img_1.png" alt="Диван Cl ouQ" loading="lazy">
+                    <div class="gal-item__caption">Диван Cl ouQ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_32-img_1.png" alt="Диван Cl ouQ" loading="lazy">
+                    <div class="gal-item__caption">Диван Cl ouQ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_33-img_1.png" alt="Диван Ko--Nooê" loading="lazy">
+                    <div class="gal-item__caption">Диван Ko--Nooê</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_34-img_1.png" alt="Диван Lof ý Luğ" loading="lazy">
+                    <div class="gal-item__caption">Диван Lof ý Luğ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_35-img_1.png" alt="Диван Ocean" loading="lazy">
+                    <div class="gal-item__caption">Диван Ocean</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_36-img_1.png" alt="Диван Ocean" loading="lazy">
+                    <div class="gal-item__caption">Диван Ocean</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_37-img_1.png" alt="Диван M ê Bobbģ" loading="lazy">
+                    <div class="gal-item__caption">Диван M ê Bobbģ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_38-img_1.png" alt="Диван b9 i t al i ( t uf t ģ t i m]" loading="lazy">
+                    <div class="gal-item__caption">Диван b9 i t al i ( t uf t ģ t i m]</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_39-img_1.png" alt="Диван ext r( l onw sof (" loading="lazy">
+                    <div class="gal-item__caption">Диван ext r( l onw sof (</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_40-img_1.png" alt="Диван Camal eond(" loading="lazy">
+                    <div class="gal-item__caption">Диван Camal eond(</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_41-img_1.png" alt="Кровати" loading="lazy">
+                    <div class="gal-item__caption">Кровати</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_42-img_1.png" alt="Кровать Ant i E Bñ" loading="lazy">
+                    <div class="gal-item__caption">Кровать Ant i E Bñ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_43-img_1.png" alt="Кровать Ant i E Bñ" loading="lazy">
+                    <div class="gal-item__caption">Кровать Ant i E Bñ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_44-img_1.png" alt="Кровать Bert (" loading="lazy">
+                    <div class="gal-item__caption">Кровать Bert (</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_45-img_1.png" alt="Кровать Bert (" loading="lazy">
+                    <div class="gal-item__caption">Кровать Bert (</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_46-img_1.png" alt="Кровать Cepp" loading="lazy">
+                    <div class="gal-item__caption">Кровать Cepp</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_47-img_1.png" alt="Кровать Cepp" loading="lazy">
+                    <div class="gal-item__caption">Кровать Cepp</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_48-img_1.png" alt="Кровать Col et t ¾" loading="lazy">
+                    <div class="gal-item__caption">Кровать Col et t ¾</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_49-img_1.png" alt="Кровать Decoro" loading="lazy">
+                    <div class="gal-item__caption">Кровать Decoro</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_50-img_1.png" alt="Кровать Decoro" loading="lazy">
+                    <div class="gal-item__caption">Кровать Decoro</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_51-img_1.png" alt="Кровать Dezer" loading="lazy">
+                    <div class="gal-item__caption">Кровать Dezer</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_52-img_1.png" alt="Кровать Dezer" loading="lazy">
+                    <div class="gal-item__caption">Кровать Dezer</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_53-img_1.png" alt="Кровать Jul i eý" loading="lazy">
+                    <div class="gal-item__caption">Кровать Jul i eý</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_54-img_1.png" alt="Кровать Li bert ģ" loading="lazy">
+                    <div class="gal-item__caption">Кровать Li bert ģ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_55-img_1.png" alt="Кровать Li bert ģ" loading="lazy">
+                    <div class="gal-item__caption">Кровать Li bert ģ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_56-img_1.png" alt="Кровать M al i bĊ" loading="lazy">
+                    <div class="gal-item__caption">Кровать M al i bĊ</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_57-img_1.png" alt="Кровать Ari eª" loading="lazy">
+                    <div class="gal-item__caption">Кровать Ari eª</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_58-img_1.png" alt="Кровать Ari eª" loading="lazy">
+                    <div class="gal-item__caption">Кровать Ari eª</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_59-img_1.png" alt="П арящая кровать Sky" loading="lazy">
+                    <div class="gal-item__caption">П арящая кровать Sky</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_60-img_1.png" alt="П арящая кровать Sky" loading="lazy">
+                    <div class="gal-item__caption">П арящая кровать Sky</div>
+                </div>
+                <div class="gal-item">
+                    <img src="images/catalog/page_61-img_1.png" alt="Кровать Tat l i ·" loading="lazy">
+                    <div class="gal-item__caption">Кровать Tat l i ·</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">El Capitone</div>
+            <div class="footer__links">
+                <a href="https://wa.me/1234567890">WhatsApp</a>
+                <a href="https://t.me/username">Telegram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

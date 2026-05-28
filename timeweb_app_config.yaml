@@ -1,0 +1,8 @@
+app:
+  name: "el-capitone-furniture"
+  preset_id: 2785
+  source:
+    repository_url: "https://github.com/McStefan/el-capitone-furniture.git"
+  config:
+    framework: "html"
+    root_dir: "/"

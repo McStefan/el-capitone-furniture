@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Capitone | Дизайнерская мягкая мебель</title>
+    <meta name="description" content="Премиальная мягкая мебель на заказ.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_v2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">El Capitone</div>
+            <nav class="header__nav">
+                <a href="#collections">Коллекции</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#materials">Ткани</a>
+            </nav>
+            <a href="#contacts" class="btn btn-outline header__btn">Связаться</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__bg">
+            <img src="images/hero-bg.png" alt="Стильный диван">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="container hero__content">
+            <h1 class="hero__title">Искусство<br>в каждой детали</h1>
+            <p class="hero__subtitle">Создаем мягкую мебель, которая становится центром притяжения вашего дома.</p>
+            <a href="#contacts" class="btn btn-primary">Связаться в WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Collections (Floating / Masonry look) -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Направления</h2>
+                <p>От пуфа до сложных модульных систем</p>
+            </div>
+            
+            <div class="collections__grid">
+                <a href="portfolio_v2.html" class="coll-card coll-card--large">
+                    <img src="images/cat-sofa.png" alt="Диваны">
+                    <div class="coll-card__text">
+                        <h3>Диваны</h3>
+                        <span>Смотреть варианты</span>
+                    </div>
+                </a>
+                <a href="portfolio_v2.html" class="coll-card">
+                    <img src="images/cat-bed.png" alt="Кровати">
+                    <div class="coll-card__text">
+                        <h3>Кровати</h3>
+                        <span>Смотреть варианты</span>
+                    </div>
+                </a>
+                <a href="portfolio_v2.html" class="coll-card">
+                    <img src="images/cat-armchair.png" alt="Кресла">
+                    <div class="coll-card__text">
+                        <h3>Кресла</h3>
+                        <span>Смотреть варианты</span>
+                    </div>
+                </a>
+                <a href="portfolio_v2.html" class="coll-card coll-card--large">
+                    <img src="images/cat-panel.png" alt="Панели">
+                    <div class="coll-card__text">
+                        <h3>Мягкие панели</h3>
+                        <span>Смотреть варианты</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Portfolio (Minimalist) -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center">Галерея проектов</h2>
+            
+            <div class="gallery__masonry">
+                <div class="gal-item"><img src="images/port-1.png" alt="Проект 1"></div>
+                <div class="gal-item"><img src="images/port-2.png" alt="Проект 2"></div>
+                <div class="gal-item"><img src="images/port-3.png" alt="Проект 3"></div>
+                <div class="gal-item"><img src="images/port-4.png" alt="Проект 4"></div>
+                <div class="gal-item"><img src="images/port-5.png" alt="Проект 5"></div>
+                <div class="gal-item"><img src="images/port-6.png" alt="Проект 6"></div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="portfolio_v2.html" class="btn btn-outline">Смотреть полную галерею (50+ фото)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials + Contact Split -->
+    <section class="materials-contact" id="materials">
+        <div class="container mc-inner">
+            <div class="mc-materials">
+                <h2 class="section-title">Премиальные ткани</h2>
+                <p>Мы работаем только с проверенными поставщиками текстиля: велюр, шенилл, букле, натуральная и эко-кожа. Выбирайте текстуру, которая идеально подойдет вашему интерьеру.</p>
+                <div class="mat-list">
+                    <span>Велюр</span>
+                    <span>Букле</span>
+                    <span>Рогожка</span>
+                    <span>Экокожа</span>
+                    <span>Жаккард</span>
+                </div>
+            </div>
+                        <div class="mc-contact" id="contacts">
+                <div class="minimal-form" style="text-align: center;">
+                    <h3 style="margin-bottom: 20px;">Свяжитесь с нами</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Обсудим ваш проект и поможем с выбором тканей.</p>
+                    <a href="https://wa.me/1234567890" class="btn btn-primary btn-block" style="margin-bottom: 15px; background-color: #25D366; color: #fff;">WhatsApp</a>
+                    <a href="https://t.me/username" class="btn btn-outline btn-block" style="margin-bottom: 30px;">Telegram</a>
+                    <a href="tel:+71234567890" style="font-size: 1.5rem; font-weight: 600; color: var(--text-color); text-decoration: none;">+7 (123) 456-78-90</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">El Capitone</div>
+            <div class="footer__links">
+                <a href="https://wa.me/1234567890">WhatsApp</a>
+                <a href="https://t.me/username">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

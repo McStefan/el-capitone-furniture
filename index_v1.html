@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Capitone — Мебель на заказ под ваш интерьер</title>
+    <meta name="description" content="Кухни, столы, шкафы, мягкая мебель и индивидуальные изделия на заказ. Подберём модель, ткань и материалы, рассчитаем стоимость.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_v1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo">El Capitone</div>
+            <nav class="header__nav">
+                <a href="#catalog">Каталог</a>
+                <a href="#process">Как заказать</a>
+                <a href="#portfolio">Наши работы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <a href="https://wa.me/1234567890" class="btn-text">WhatsApp</a>
+                <a href="#contacts" class="btn btn-outline">Рассчитать стоимость</a>
+            </div>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">Стартовые цены на первые заказы</div>
+                <h1 class="hero__title">Мебель на заказ под ваш интерьер</h1>
+                <p class="hero__subtitle">Кухни, столы, шкафы, мягкая мебель и индивидуальные изделия. Подберём модель, ткань и материалы, рассчитаем стоимость и изготовим под ваши размеры.</p>
+                <div class="hero__buttons">
+                    <button class="btn btn-primary" data-modal="calc">Рассчитать стоимость</button>
+                    <a href="#catalog" class="btn btn-outline">Смотреть каталог</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <img src="images/hero-bg.png" alt="Стильный интерьер с мебелью на заказ" fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Block -->
+    <section class="trust">
+        <div class="container trust__inner">
+            <div class="trust__item">
+                <div class="trust__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="8" rx="2"/><path d="M6 8v4"/><path d="M10 8v4"/><path d="M14 8v4"/><path d="M18 8v4"/></svg>
+                </div>
+                <p>Изготовление по индивидуальным размерам</p>
+            </div>
+            <div class="trust__item">
+                <div class="trust__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <p>Выбор ткани и материалов по образцам</p>
+            </div>
+            <div class="trust__item">
+                <div class="trust__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                </div>
+                <p>Предоплата 50% после согласования</p>
+            </div>
+            <div class="trust__item">
+                <div class="trust__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <p>Срок изготовления от 7 дней (при наличии ткани)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог изделий</h2>
+            <div class="catalog__grid">
+                <!-- Категория 1 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <img src="images/cat-sofa.png" alt="Диваны и кресла" loading="lazy">
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Диваны и кресла</h3>
+                        <p>Мягкая мебель с выбором ткани, формы и размера.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+                <!-- Категория 2 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <img src="images/cat-bed.png" alt="Индивидуальные кухни" loading="lazy">
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Кровати на заказ</h3>
+                        <p>Индивидуальные кровати под размеры спальни, стиль и бюджет.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+                <!-- Категория 3 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <img src="images/cat-panel.png" alt="Шкафы и системы хранения" loading="lazy">
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Мягкие панели</h3>
+                        <p>Декоративные панели для спальни, прихожей, гостиной или коммерческих помещений.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+                <!-- Категория 4 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <img src="images/cat-armchair.png" alt="Столы" loading="lazy">
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Дизайнерские кресла</h3>
+                        <p>Комфортные кресла с индивидуальным подбором тканей.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+                <!-- Категория 5 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <img src="images/cat-pouf.png" alt="Мягкие панели" loading="lazy">
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Пуфы и банкетки</h3>
+                        <p>Компактные и стильные решения для вашего интерьера.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+                <!-- Категория 6 -->
+                <div class="catalog-card">
+                    <div class="catalog-card__img-wrap">
+                        <div class="placeholder-img" style="background: #e9ecef; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #adb5bd;">📐</div>
+                    </div>
+                    <div class="catalog-card__content">
+                        <h3>Индивидуальные изделия</h3>
+                        <p>Нестандартные проекты под конкретную задачу клиента.</p>
+                        <button class="btn-text" data-modal="calc">Узнать стоимость &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Как проходит заказ</h2>
+            <div class="process__steps">
+                <div class="step">
+                    <div class="step__num">1</div>
+                    <h3>Вы выбираете модель</h3>
+                    <p>Можно выбрать готовый вариант из каталога или обсудить индивидуальный проект.</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">2</div>
+                    <h3>Подбираем ткань и материалы</h3>
+                    <p>Показываем образцы тканей и материалов, помогаем выбрать подходящий вариант.</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">3</div>
+                    <h3>Согласовываем стоимость</h3>
+                    <p>Цена зависит от модели, размера, ткани, материалов и сложности изделия.</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">4</div>
+                    <h3>Предоплата 50%</h3>
+                    <p>После согласования всех деталей клиент вносит 50% предоплаты.</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">5</div>
+                    <h3>Запускаем изготовление</h3>
+                    <p>Если ткань есть в наличии, срок изготовления от 7 дней. Для редких тканей — индивидуально.</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">6</div>
+                    <h3>Передаём готовое изделие</h3>
+                    <p>Доставляем и устанавливаем заказ на вашем объекте.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container pricing__inner">
+            <div class="pricing__content">
+                <h2 class="section-title">Примерные цены</h2>
+                <ul class="pricing__list">
+                    <li><span>Кровати</span> <span>от 45 000 ₽</span></li>
+                    <li><span>Диваны</span> <span>от 60 000 ₽</span></li>
+                    <li><span>Кресла</span> <span>от 25 000 ₽</span></li>
+                    <li><span>Мягкие панели</span> <span>от 15 000 ₽ / м²</span></li>
+                    <li><span>Пуфы</span> <span>от 10 000 ₽</span></li>
+                    <li><span>Индивидуальные изделия</span> <span>по расчёту</span></li>
+                </ul>
+                <p class="pricing__note">Финальная стоимость зависит от размеров, модели, выбранной ткани, материалов и сложности работы. Сейчас действуют стартовые цены на первые заказы.</p>
+                <button class="btn btn-primary" data-modal="calc">Получить точный расчёт</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials -->
+    <section class="materials">
+        <div class="container">
+            <h2 class="section-title text-center">Выбор ткани и материалов по образцам</h2>
+            <p class="section-subtitle text-center">Перед запуском заказа вы выбираете ткань и материалы из доступных образцов. Если нужная ткань есть в наличии, изделие можно изготовить примерно за неделю. При заказе редкой ткани срок увеличивается.</p>
+            
+            <div class="materials__swatches">
+                <div class="swatch-item"><div class="swatch-color" style="background: linear-gradient(135deg, #1e3b4d, #29526b);"></div><span>Велюр</span></div>
+                <div class="swatch-item"><div class="swatch-color" style="background: repeating-linear-gradient(45deg, #d3c7b9, #d3c7b9 2px, #c4b5a3 2px, #c4b5a3 4px);"></div><span>Рогожка</span></div>
+                <div class="swatch-item"><div class="swatch-color" style="background: radial-gradient(circle at 50% 50%, #fdfbf7 2px, #e8e2d5 3px); background-size: 8px 8px;"></div><span>Букле</span></div>
+                <div class="swatch-item"><div class="swatch-color" style="background: #3e2723;"></div><span>Экокожа</span></div>
+                <div class="swatch-item"><div class="swatch-color" style="background: linear-gradient(to right, #8b9dc3, #7a8baf);"></div><span>Жаккард</span></div>
+                <div class="swatch-item"><div class="swatch-color" style="background: #a98467;"></div><span>Дерево (ЛДСП/Шпон)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="portfolio__grid">
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-1.png" alt="Диван на заказ" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Диван на заказ</span>
+                    </div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-2.png" alt="Мягкие панели" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Мягкая кровать</span>
+                    </div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-3.png" alt="Индивидуальный проект" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Индивидуальный проект</span>
+                    </div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-4.png" alt="Современная кухня" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Модульный диван</span>
+                    </div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-5.png" alt="Встроенный шкаф" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Мягкие кресла</span>
+                    </div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/port-6.png" alt="Обеденный стол" loading="lazy">
+                    <div class="portfolio-item__overlay">
+                        <span>Кровать с мягким изголовьем</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="portfolio_v1.html" class="btn btn-outline">Смотреть весь каталог (50+ моделей)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages__grid">
+                <div class="adv-card">
+                    <h4>Индивидуальное изготовление</h4>
+                    <p>Изделие создаётся под размеры, стиль и задачу клиента.</p>
+                </div>
+                <div class="adv-card">
+                    <h4>Большой выбор материалов</h4>
+                    <p>Можно подобрать ткань, цвет, фактуру и отделку под любой интерьер.</p>
+                </div>
+                <div class="adv-card">
+                    <h4>Понятный процесс</h4>
+                    <p>Модель, материалы, расчёт, предоплата и прозрачный запуск в работу.</p>
+                </div>
+                <div class="adv-card">
+                    <h4>Срок от 7 дней</h4>
+                    <p>При наличии ткани и материалов на нашем складе или у партнеров.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contacts -->
+    <section class="cta-form" id="contacts">
+        <div class="container cta-form__inner">
+            <div class="cta-form__text">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p>Мы готовы обсудить ваш проект, подсказать варианты, помочь выбрать материал и рассчитать цену.</p>
+                <div class="cta-form__messengers">
+                    <a href="https://wa.me/1234567890" class="btn btn-wa">Написать в WhatsApp</a>
+                    <a href="https://t.me/username" class="btn btn-tg">Написать в Telegram</a>
+                </div>
+            </div>
+            <div class="cta-form__card text-center" style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 250px;">
+                <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Наши контакты</h3>
+                <a href="tel:+71234567890" style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color); text-decoration: none; margin-bottom: 15px;">+7 (123) 456-78-90</a>
+                <a href="mailto:info@elcapitone.ru" style="font-size: 1.1rem; color: var(--text-muted); text-decoration: none;">info@elcapitone.ru</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">El Capitone</div>
+            <div class="footer__copy">© 2026 Все права защищены. Изготовление мягкой мебели на заказ.</div>
+        </div>
+    </footer>
+
+    
+    <!-- Lightbox -->
+    <dialog class="lightbox-dialog" id="lightbox">
+        <button class="lightbox__close" aria-label="Закрыть">&times;</button>
+        <img src="" alt="Увеличенное фото" class="lightbox__img">
+    </dialog>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

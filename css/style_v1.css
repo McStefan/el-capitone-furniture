@@ -214,12 +214,19 @@ img {
 .hero__subtitle {
     font-size: 1.125rem;
     color: var(--text-muted);
-    margin-bottom: 40px;
+    margin-bottom: 16px;
+}
+
+.hero__note {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 32px;
 }
 
 .hero__buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .hero__visual img {
@@ -255,8 +262,19 @@ img {
 }
 
 .trust p {
+    color: var(--text-muted);
     font-size: 0.95rem;
-    font-weight: 500;
+}
+
+.trust__item h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.trust__item p {
+    font-size: 0.95rem;
+    font-weight: 400;
 }
 
 /* Catalog */
@@ -520,6 +538,9 @@ img {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .form h3 { margin-bottom: 10px; font-size: 1.5rem; }
@@ -551,6 +572,35 @@ img {
     margin-top: 15px;
 }
 
+.contact-card {
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-card__title {
+    font-size: 1.75rem;
+    margin-bottom: 18px;
+}
+
+.contact-card__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-card__links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card__messengers {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 .footer {
     padding: 40px 0;
@@ -568,6 +618,59 @@ img {
 .footer__copy {
     color: rgba(255,255,255,0.6);
     font-size: 0.9rem;
+    max-width: 900px;
+    margin: 0 auto 16px;
+}
+
+.footer__contacts,
+.footer__legal {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.footer__contacts a,
+.footer__legal a,
+.footer__legal span {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer__contacts a:hover,
+.footer__legal a:hover {
+    color: #fff;
+}
+
+.legal-docs {
+    padding: 56px 0;
+    background: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.legal-docs .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.legal-doc {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.legal-doc h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.legal-doc p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 /* Modal */
@@ -650,6 +753,7 @@ img {
     .trust__inner { grid-template-columns: 1fr; }
     .hero__buttons { flex-direction: column; }
     .cta-form__messengers { flex-direction: column; }
+    .contact-card__messengers { flex-direction: column; }
 }
 
 /* Materials Swatches */

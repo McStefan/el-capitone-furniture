@@ -3,12 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Capitone — портфолио мягкой мебели и перетяжки</title>
-    <meta name="description" content="Портфолио El Capitone: мягкая мебель, ткани, детали, диваны, кровати, кресла и визуальные ориентиры по перетяжке и обновлению интерьера.">
+    <title>Портфолио мягкой мебели El Capitone — диваны, кровати, кресла, пуфы и банкетки</title>
+    <meta name="description" content="Портфолио мягкой мебели El Capitone: диваны, кровати, кресла, пуфы и банкетки по готовым моделям. Смотрите все фото и выбирайте модель для расчёта.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style_v1.css">
+    <style>
+        .page-header { padding: 154px 0 60px; text-align: center; background: var(--surface-color); border-bottom: 1px solid var(--border-color); }
+        .page-header h1 { font-size: 3rem; margin-bottom: 15px; }
+        .page-header p { color: var(--text-muted); max-width: 860px; margin: 0 auto; font-size: 1.15rem; line-height: 1.6; }
+        .full-portfolio { padding: 80px 0; }
+        .portfolio-item__overlay span {
+            font-size: 1.05rem;
+            text-align: center;
+            padding: 0 15px;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .page-header { padding-top: 120px; }
+            .page-header h1 { font-size: 2.2rem; }
+        }
+        /* Стили для лайтбокса с подписью */
+        .lightbox-dialog {
+            margin: auto;
+            padding: 0;
+            border: none;
+            background: transparent;
+            max-width: 90vw;
+            max-height: 95vh;
+        }
+        .lightbox-dialog::backdrop {
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(5px);
+        }
+        .lightbox__img {
+            max-width: 100%;
+            max-height: 85vh;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .lightbox__close {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 3rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: color 0.3s;
+        }
+        .lightbox__close:hover {
+            color: var(--accent-color);
+        }
+        .lightbox__caption {
+            color: white;
+            margin-top: 15px;
+            font-weight: 400;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,10 +75,10 @@
             <div class="header__logo">El Capitone</div>
             <nav class="header__nav">
                 <a href="index_v3.html">Главная</a>
-                <a href="#new-furniture">Новая мебель</a>
-                <a href="#details">Детали</a>
-                <a href="#reupholstery">Перетяжка</a>
-                <a href="#contacts">Контакты</a>
+                <a href="index_v3.html#catalog">Каталог</a>
+                <a href="index_v3.html#process">Как заказать</a>
+                <a href="portfolio_v3.html">Портфолио</a>
+                <a href="index_v3.html#contacts">Контакты</a>
             </nav>
             <div class="header__actions">
                 <a href="https://wa.me/1234567890?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B%20%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D0%B8." class="btn-text">WhatsApp</a>
@@ -32,145 +90,247 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero__inner">
-            <div class="hero__content">
-                <div class="hero__badge">Портфолио El Capitone</div>
-                <h1 class="hero__title">Мягкая мебель, ткани и детали, по которым проще почувствовать стиль будущего изделия</h1>
-                <p class="hero__subtitle">Собрали в одном месте диваны, кровати, кресла, пуфы и интерьерные акценты, чтобы можно было спокойно посмотреть настроение, формы, посадку и варианты ткани. Это не каталог “как у всех”, а визуальные ориентиры для живого обсуждения в WhatsApp.</p>
-                <div class="hero__buttons">
-                    <a href="https://wa.me/1234567890?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%D0%B7%20%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE." class="btn btn-primary">Обсудить модель в WhatsApp</a>
-                    <a href="index_v3.html" class="btn btn-outline">Вернуться на главную</a>
-                </div>
-            </div>
-            <div class="hero__visual">
-                <img src="images/hero-bg.webp" alt="Портфолио мягкой мебели El Capitone" fetchpriority="high">
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="new-furniture">
+    <div class="page-header">
         <div class="container">
-            <h2 class="section-title">Новая мягкая мебель</h2>
-            <p class="section-subtitle">Эти кадры помогают понять не только форму изделия, но и то, как ткань работает в интерьере, сколько в нем мягкости, воздуха и визуальной выразительности.</p>
+            <h1>Портфолио мягкой мебели El Capitone</h1>
+            <p>В портфолио El Capitone собраны диваны, кровати, кресла, пуфы и банкетки, выполненные по готовым моделям. По фотографиям проще оценить посадку, пропорции, ткань и настроение будущего изделия перед расчётом.</p>
+        </div>
+    </div>
+
+    <section class="full-portfolio">
+        <div class="container">
             <div class="portfolio__grid">
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-1.webp" alt="Модульный диван El Capitone для гостиной" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Модульный диван для гостиной</span></div>
+                    <img src="images/catalog/page_2-img_1.webp" alt="Кресло El Capitone для клиентской зоны" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone для клиентской зоны</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-2.webp" alt="Кровать El Capitone с высоким мягким изголовьем" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Кровать с мягким изголовьем</span></div>
+                    <img src="images/catalog/page_3-img_1.webp" alt="Кресло El Capitone с мягкой обивкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone с мягкой обивкой</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-3.webp" alt="Круглая кровать El Capitone в мягкой обивке" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Круглая кровать как акцент</span></div>
+                    <img src="images/catalog/page_4-img_1.webp" alt="Круглый пуф El Capitone" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Круглый пуф El Capitone</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-4.webp" alt="Прямой диван El Capitone в спокойной ткани" loading="lazy">
+                    <img src="images/catalog/page_5-img_1.webp" alt="Пуф El Capitone для спальни" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Пуф El Capitone для спальни</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_6-img_1.webp" alt="Пуф El Capitone в мягкой обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Пуф El Capitone в мягкой обивке</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_7-img_1.webp" alt="Компактный пуф El Capitone" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Компактный пуф El Capitone</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_10-img_1.webp" alt="Кресло El Capitone для зоны отдыха" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone для зоны отдыха</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_11-img_1.webp" alt="Кресло El Capitone в светлой ткани" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone в светлой ткани</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_12-img_1.webp" alt="Мягкое кресло El Capitone с высокой спинкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Мягкое кресло с высокой спинкой</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_13-img_1.webp" alt="Кресло El Capitone с выразительной стёжкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло с выразительной стёжкой</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_14-img_1.webp" alt="Кресло El Capitone в классической форме" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone в классической форме</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_15-img_1.webp" alt="Кресло El Capitone для домашнего интерьера" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло для домашнего интерьера</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_16-img_1.webp" alt="Кресло El Capitone в мягком велюре" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone в мягком велюре</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_17-img_1.webp" alt="Кресло El Capitone с глубокой посадкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло с глубокой посадкой</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_18-img_1.webp" alt="Кресло El Capitone в спокойной обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло в спокойной обивке</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_19-img_1.webp" alt="Кресло El Capitone для кабинета" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кресло El Capitone для кабинета</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_20-img_1.webp" alt="Банкетка El Capitone для прихожей" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Банкетка El Capitone для прихожей</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_21-img_1.webp" alt="Банкетка El Capitone с мягким сиденьем" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Банкетка с мягким сиденьем</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_22-img_1.webp" alt="Банкетка El Capitone с крышкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Банкетка El Capitone с крышкой</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_23-img_1.webp" alt="Диваны El Capitone по готовым моделям" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диваны El Capitone по готовым моделям</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_24-img_1.webp" alt="Прямой диван El Capitone в светлой ткани" loading="lazy">
                     <div class="portfolio-item__overlay"><span>Прямой диван в светлой ткани</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-5.webp" alt="Кресло El Capitone для зоны отдыха" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Кресло для чтения и отдыха</span></div>
+                    <img src="images/catalog/page_25-img_1.webp" alt="Диван El Capitone с мягкой стёжкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван с мягкой стёжкой</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/port-6.webp" alt="Пуф и диван El Capitone в одном настроении" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Пуф и диван в одном стиле</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="details">
-        <div class="container">
-            <h2 class="section-title">Ткани, формы и интерьерные детали</h2>
-            <p class="section-subtitle">Здесь важны не только предметы сами по себе, но и то, как они собирают пространство: делают его мягче, спокойнее, выразительнее или уютнее.</p>
-            <div class="portfolio__grid">
-                <div class="portfolio-item lightbox-trigger">
-                    <img src="images/cat-sofa.webp" alt="Диван El Capitone крупным планом" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Форма и глубина посадки</span></div>
+                    <img src="images/catalog/page_26-img_1.webp" alt="Диван El Capitone для гостиной" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван El Capitone для гостиной</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/cat-bed.webp" alt="Мягкая кровать El Capitone в интерьере спальни" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Кровать как центр спальни</span></div>
+                    <img src="images/catalog/page_27-img_1.webp" alt="Диван El Capitone в спокойной обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван в спокойной обивке</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/cat-armchair.webp" alt="Кресло El Capitone с акцентной обивкой" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Кресло как мягкий акцент</span></div>
+                    <img src="images/catalog/page_28-img_1.webp" alt="Прямой диван El Capitone с мягкими подлокотниками" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Прямой диван с мягкими подлокотниками</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/cat-pouf.webp" alt="Пуф El Capitone для спальни или гардеробной" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Компактные акцентные предметы</span></div>
+                    <img src="images/catalog/page_29-img_1.webp" alt="Диван El Capitone для зоны отдыха" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван El Capitone для зоны отдыха</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/catalog/page_22-img_1.webp" alt="Банкетка El Capitone" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Банкетка для спальни и прихожей</span></div>
+                    <img src="images/catalog/page_30-img_1.webp" alt="Диван El Capitone в классической форме" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван в классической форме</span></div>
                 </div>
                 <div class="portfolio-item lightbox-trigger">
-                    <img src="images/hero-bg.webp" alt="Мягкая мебель El Capitone в светлом интерьере" loading="lazy">
-                    <div class="portfolio-item__overlay"><span>Общее настроение интерьера</span></div>
+                    <img src="images/catalog/page_31-img_1.webp" alt="Диван El Capitone для жилого интерьера" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван для жилого интерьера</span></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="advantages" id="reupholstery">
-        <div class="container">
-            <h2 class="section-title">Что важно помнить про перетяжку</h2>
-            <div class="advantages__grid">
-                <div class="adv-card">
-                    <h3>Это не просто смена ткани</h3>
-                    <p>При необходимости обновляется наполнитель, а если нужно — ремонтируется каркас. За счет этого мебель получает не только новый вид, но и новый ресурс.</p>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_32-img_1.webp" alt="Диван El Capitone с акцентной посадкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван с акцентной посадкой</span></div>
                 </div>
-                <div class="adv-card">
-                    <h3>Подходит не каждой мебели</h3>
-                    <p>Если изделие действительно стоит обновления, об этом скажем. Если выгоднее смотреть новую мебель — тоже скажем прямо.</p>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_33-img_1.webp" alt="Диван El Capitone в мягкой ткани" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван El Capitone в мягкой ткани</span></div>
                 </div>
-                <div class="adv-card">
-                    <h3>Фото ускоряет разговор</h3>
-                    <p>По перетяжке лучше сразу прислать фото в WhatsApp, чтобы можно было предварительно понять объем работ и ориентир по стоимости.</p>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_34-img_1.webp" alt="Диван El Capitone для современной гостиной" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван для современной гостиной</span></div>
                 </div>
-                <div class="adv-card">
-                    <h3>Интерьер меняется заметно</h3>
-                    <p>Даже одно обновленное кресло или диван может полностью освежить комнату, если грамотно подобрать ткань и оттенок.</p>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_35-img_1.webp" alt="Прямой диван El Capitone в однотонной обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Прямой диван в однотонной обивке</span></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="materials">
-        <div class="container">
-            <h2 class="section-title text-center">На что смотреть в портфолио</h2>
-            <p class="section-subtitle text-center">Смотрите не только на “красиво / не красиво”. Обращайте внимание на высоту спинки, глубину посадки, форму подлокотников, фактуру ткани и общее настроение комнаты. Именно из этих деталей потом складывается удачный выбор.</p>
-            <div class="materials__swatches">
-                <div class="swatch-item"><div class="swatch-color" style="background: linear-gradient(135deg, #1e3b4d, #29526b);"></div><span>Цвет</span></div>
-                <div class="swatch-item"><div class="swatch-color" style="background: repeating-linear-gradient(45deg, #d3c7b9, #d3c7b9 2px, #c4b5a3 2px, #c4b5a3 4px);"></div><span>Фактура</span></div>
-                <div class="swatch-item"><div class="swatch-color" style="background: radial-gradient(circle at 50% 50%, #fdfbf7 2px, #e8e2d5 3px); background-size: 8px 8px;"></div><span>Объем</span></div>
-                <div class="swatch-item"><div class="swatch-color" style="background: linear-gradient(135deg, #6f7b8f, #8592a8);"></div><span>Посадка</span></div>
-                <div class="swatch-item"><div class="swatch-color" style="background: linear-gradient(to right, #8b9dc3, #7a8baf);"></div><span>Пропорции</span></div>
-                <div class="swatch-item"><div class="swatch-color" style="background: #3e2723;"></div><span>Настроение</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-form" id="contacts">
-        <div class="container cta-form__inner">
-            <div class="cta-form__text">
-                <h2 class="section-title">Понравился стиль или хотите понять, подойдет ли вам перетяжка?</h2>
-                <p>Напишите нам в WhatsApp, позвоните или отправьте письмо. Можно просто прислать фото понравившегося варианта с этой страницы и написать, что именно откликается: форма, ткань, цвет или общая атмосфера.</p>
-            </div>
-            <div class="cta-form__card">
-                <div class="contact-card">
-                    <h2 class="contact-card__title">Связаться с El Capitone</h2>
-                    <div class="contact-card__links">
-                        <a href="tel:+71234567890">+7 (123) 456-78-90</a>
-                        <a href="mailto:info@elcapitone.ru">info@elcapitone.ru</a>
-                    </div>
-                    <div class="contact-card__messengers">
-                        <a href="https://wa.me/1234567890?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%20%D0%B8%D0%B7%20%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE." class="btn btn-wa">Написать в WhatsApp</a>
-                        <a href="index_v3.html" class="btn btn-outline">На главную</a>
-                    </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_36-img_1.webp" alt="Диван El Capitone для просторной гостиной" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван для просторной гостиной</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_37-img_1.webp" alt="Модульный диван El Capitone" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Модульный диван El Capitone</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_38-img_1.webp" alt="Диван El Capitone с мягкой стёжкой капитоне" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван с мягкой стёжкой капитоне</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_39-img_1.webp" alt="Диван El Capitone удлинённой формы" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван удлинённой формы</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_40-img_1.webp" alt="Диван El Capitone для современной зоны отдыха" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Диван для современной зоны отдыха</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_41-img_1.webp" alt="Кровати El Capitone по готовым моделям" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровати El Capitone по готовым моделям</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_42-img_1.webp" alt="Кровать El Capitone with soft headboard" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с мягким изголовьем</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_43-img_1.webp" alt="Кровать El Capitone в светлой ткани" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать в светлой ткани</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_44-img_1.webp" alt="Кровать El Capitone для спальни" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать El Capitone для спальни</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_45-img_1.webp" alt="Кровать El Capitone в мягкой обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать в мягкой обивке</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_46-img_1.webp" alt="Кровать El Capitone с акцентным изголовьем" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с акцентным изголовьем</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_47-img_1.webp" alt="Кровать El Capitone с высокой спинкой" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с высокой спинкой</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_48-img_1.webp" alt="Кровать El Capitone для современного интерьера" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать для современного интерьера</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_49-img_1.webp" alt="Кровать El Capitone в однотонной ткани" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать в однотонной ткани</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_50-img_1.webp" alt="Кровать El Capitone с мягким царговым основанием" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с мягким основанием</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_51-img_1.webp" alt="Кровать El Capitone в мягком велюре" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать El Capitone в мягком велюре</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_52-img_1.webp" alt="Кровать El Capitone для уютной спальни" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать для уютной спальни</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_53-img_1.webp" alt="Кровать El Capitone с мягким изголовьем и кантом" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с мягким изголовьем и кантом</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_54-img_1.webp" alt="Кровать El Capitone в классической форме" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать El Capitone в классической форме</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_55-img_1.webp" alt="Кровать El Capitone в светлой спальне" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать в светлой спальне</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_56-img_1.webp" alt="Кровать El Capitone с мягкой геометрией" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с мягкой геометрией</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_57-img_1.webp" alt="Кровать El Capitone с выразительным силуэтом" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с выразительным силуэтом</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_58-img_1.webp" alt="Кровать El Capitone для современного интерьера спальни" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать для современного интерьера спальни</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_59-img_1.webp" alt="Кровать El Capitone с мягким изголовьем Sky" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать с мягким изголовьем Sky</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_60-img_1.webp" alt="Кровать El Capitone Sky в мягкой обивке" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать Sky в мягкой обивке</span></div>
+                </div>
+                <div class="portfolio-item lightbox-trigger">
+                    <img src="images/catalog/page_61-img_1.webp" alt="Кровать El Capitone для спокойной спальни" loading="lazy">
+                    <div class="portfolio-item__overlay"><span>Кровать El Capitone для спокойной спальни</span></div>
                 </div>
             </div>
         </div>
@@ -196,9 +356,47 @@
 
     <dialog class="lightbox-dialog" id="lightbox">
         <button class="lightbox__close" aria-label="Закрыть">&times;</button>
-        <img src="" alt="Увеличенное фото" class="lightbox__img">
+        <div style="text-align:center;">
+            <img src="" alt="Увеличенное фото" class="lightbox__img">
+            <h3 class="lightbox__caption"></h3>
+        </div>
     </dialog>
 
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                const lightboxImg = lightbox.querySelector('.lightbox__img');
+                const lightboxCaption = lightbox.querySelector('.lightbox__caption');
+                const lightboxClose = lightbox.querySelector('.lightbox__close');
+
+                document.querySelectorAll('.lightbox-trigger').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const img = item.querySelector('img');
+                        const span = item.querySelector('span');
+                        if (img) {
+                            lightboxImg.src = img.src;
+                            lightboxImg.alt = img.alt;
+                            if (span && lightboxCaption) {
+                                lightboxCaption.textContent = span.textContent;
+                            }
+                            lightbox.showModal();
+                        }
+                    });
+                });
+
+                lightboxClose.addEventListener('click', () => {
+                    lightbox.close();
+                });
+
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) {
+                        lightbox.close();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

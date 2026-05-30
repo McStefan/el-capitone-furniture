@@ -292,12 +292,6 @@ img {
     gap: 34px;
 }
 
-/* Специальные стили для блока выбора формата (2 карточки) */
-.catalog__grid--services {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 520px));
-    justify-content: center;
-}
-
 .catalog-card {
     background: var(--surface-color);
     border-radius: var(--radius);
@@ -808,4 +802,18 @@ img {
     .catalog__grid .catalog-card:nth-child(5) {
         grid-column: 4 / span 2;
     }
+}
+
+/* Окончательный фикс для блока услуг */
+.catalog__grid.catalog__grid--services {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 520px)) !important;
+    justify-content: center !important;
+    display: grid !important;
+    gap: 40px !important;
+}
+
+.catalog__grid.catalog__grid--services .catalog-card {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: 520px !important;
 }

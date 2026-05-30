@@ -292,6 +292,12 @@ img {
     gap: 34px;
 }
 
+/* Специальные стили для блока выбора формата (2 карточки) */
+.catalog__grid--services {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 520px));
+    justify-content: center;
+}
+
 .catalog-card {
     background: var(--surface-color);
     border-radius: var(--radius);

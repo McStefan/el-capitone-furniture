@@ -817,3 +817,13 @@ img {
     width: 100% !important;
     max-width: 520px !important;
 }
+
+.catalog__grid.catalog__grid--services .catalog-card__img-wrap {
+    height: 340px !important;
+    background-color: #f9f9f9; /* Легкий фон на случай разных пропорций */
+}
+
+.catalog__grid.catalog__grid--services .catalog-card__img-wrap img {
+    object-fit: contain !important;
+    padding: 10px;
+}
